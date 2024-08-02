@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ARIUS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/FAVICON/favicon-32x32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/css/mainappend.css" rel="stylesheet">
+  <link href="assets/css/Arius.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <style media="screen">
+    .loader {
+    display: block;
+    width: 84px;
+    height: 84px;
+    position: relative;
+  }
+
+  .loader:before , .loader:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #EB5E28;
+    transform: translate(-50% , -100%)  scale(0);
+    animation: push_401 2s infinite linear;
+  }
+
+  .loader:after {
+    animation-delay: 1s;
+  }
+
+  @keyframes push_401 {
+    0% , 50% {
+      transform: translate(-50% , 0%)  scale(1)
+    }
+
+    100% {
+      transform: translate(-50%, -100%) scale(0)
+    }
+  }
+
+    h1 {
+  transition: transform 1s ease-in-out;
+}
+
+h1:hover {
+  transform: skewX(-15deg);
+}
+
+#blogs-section {
+  margin: 5%;
+   text-align: center;
+}
+
+.blog-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.blog-item .blog-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.blog-item .blog-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.blog-item:hover .blog-img {
+  opacity: 0.5;
+}
+.blog-item:hover .blog-content {
+  opacity: 1;
+}
+.blog-item .blog-content h3 {
+  margin-top: 0;
+}
+.blog-item .blog-content a.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #EB5E28;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.blog-item .blog-content a.button:hover {
+  background-color: #EB5E28;
+}
+
+  </style>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+       <a href="index.html"><img src="assets/img/Transparent PNG/ariustransparent.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About us</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#Services" ><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="webdev.html">Website Developmet</a></li>
+              <li><a href="graphics.html">Logo & Poster Design</a></li>
+
+              <li><a href="socialmedia.html">Social Media/Ad Videos</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto  active" href="blog.html">Blogs</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#team">Feedback</a></li>-->
+          <li><a class="nav-link scrollto" href="contact.html">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero">
+
+    <div class="container background">
+      <div class="row justify-content-between sparkles">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>Embark on a Transformative Journey of Knowledge and Inspiration with <br> <span>ARIUS</span></h1>
+            <h2>Welcome to our Blog Page
+            </h2>
+            <div class="text-center text-lg-start">
+              <a href="contact.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <span class="loader"></span>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/Transparent PNG/ariustransparent.png" class="flip img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <section id = "blogs-section">
+    <h1 style="padding: 1%; font-size: 3rem;">"Insights, Inspiration, and Expertise: Explore Our Blog"</h1>
+    <h6  style="padding: 1%; font-size: 1.5rem;">Stay updated with our engaging blog content, where we share valuable insights, creative inspiration, and expert knowledge in social media, videography, graphic design, and web development. Fuel your passion and elevate your skills with our curated articles.</h6>
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="blog-item">
+        <img class="blog-img" src="assets/img/BLOG/India's Foreign Relations A Remarkable Journey of Improvement.jpg" alt="">
+        <div class="blog-content">
+          <h3>India's Foreign Relations - A Remarkable Journey of Improvement</h3>
+          <a href="#" class="button">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="blog-item">
+        <img class="blog-img" src="assets/img/BLOG/The Power of Social Media.jpg" alt="">
+        <div class="blog-content">
+          <h3>The Power of Social Media: Impact and Influence in the Digital Age</h3>
+          <a href="#" class="button">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="blog-item">
+        <img class="blog-img" src="assets/img/BLOG/NFT_BLOG.jpg" alt="">
+        <div class="blog-content">
+          <h3>Introduction to NFTs: A Beginner's Guide</h3>
+          
+          <a href="https://ridhishahede.wordpress.com/2023/06/04/introduction-to-nfts-a-beginners-guide/" class="button">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="blog-item">
+        <img class="blog-img" src="assets/img/BLOG/Internship_blog.jpg" alt="">
+        <div class="blog-content">
+          <h3>Unlocking Success: The Journey of Internships for Computer Science B.Tech Students in India</h3>
+          <a href="https://ridhishahede.wordpress.com/2023/05/23/unlocking-success-the-journey-of-internships-for-computer-science-b-tech-students-in-india/" class="button">Read More</a>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- Add more blog items here -->
+  </div>
+</div>
+  </section>
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top" style="background-color: #252422;">
+    <div class="container" >
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-info">
+      <a href="index.html">     <img src="assets/img/Transparent PNG/ariustransparent.png" alt="" class="img-fluid" height="250px" width="250px"></a> 
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4 style="color: #EB5E28;">Contact us</h4>
+          <p>NH 66, Srinivasnagar<br>
+            Surathkal, Mangalore<br>
+            Karnataka 575025<br>
+            <strong>Phone:</strong>  +91 8279422731<br>
+            <strong>Email:</strong>  arius7103@gmail.com<br>
+          </p>
+          <div class="social-links mt-3">
+            <a href="https://twitter.com/arius_tech" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/arius_tech/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="www.linkedin.com/in/arius-350283285" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-links" id="stop">
+          <h4 style="color: #EB5E28; float: left;">Useful Links</h4><br><br><br>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="blog.html">Blogs</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#stop">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#stop">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4 style="color: #EB5E28; float: left;">Our Services</h4><br><br><br>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="webdev.html">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="graphics.html">Logo Designing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="socialmedia.html">Ad Videos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="socialmedia.html">Social Media Management</a></li>
+
+          </ul>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><a href="index.html"><span>ARIUS</span></a></strong>. All Rights Reserved
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/S.js"></script>
+
+</body>
+
+</html>

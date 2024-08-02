@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ARIUS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/FAVICON/favicon-32x32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/css/mainappend.css" rel="stylesheet">
+  <link href="assets/css/Arius.css" rel="stylesheet">
+
+  <style media="screen">
+    #introduction {
+      margin: 5%;
+      background-color: #252422;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #EB5E28;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #EB5E28;
+      color: #fff;
+    }
+
+    .contact-button {
+      display: flex;
+    justify-content: center;
+    }
+
+    #values {
+      background-color: #EB5E28;
+      color: white;
+    }
+
+    #values {
+      padding: 5% 5% 3% 5%;
+    }
+
+    #values .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto 20px 50px 20px;
+    }
+
+    #values h6 {
+        padding-top: 5%;
+    }
+
+    #values .ideas {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 360px;
+        background-color: #EB5E28;
+        position: relative;
+        animation: zoomIn 2s forwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #values .fast {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 360px;
+      background-color: #EB5E28;
+      position: relative;
+      animation: zoomIn 1s forwards;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column {
+    padding: 1%;
+    border-radius: 1rem;
+  background: linear-gradient(to bottom, #ffffff, #252422);
+  transition: transform 0.3s;
+
+}
+
+.column:hover {
+  transform: scale(1.1);
+  filter: blur(0);
+}
+
+.zoom-holder:hover .column:not(:hover) {
+  transform: scale(0.9);
+  filter: blur(2px);
+}
+
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+  }
+}
+
+.intro-content {
+  padding-bottom: 1%;
+  line-height: 200%;
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 767px) {
+  .intro-content {
+    text-align: center;
+  }
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.point {
+  position: relative;
+}
+
+.point img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h2, .overlay p {
+  color: #fff;
+  text-align: center;
+}
+
+.point:hover .overlay {
+  opacity: 1;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 4%;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #EB5E28;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #EB5E28;
+  color: #fff;
+}
+  </style>
+
+</head>
+
+<body  style="background-color: #252422;">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+       <a href="index.html"><img src="assets/img/Transparent PNG/ariustransparent.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto  active" href="about.html">About us</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#Services" ><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="webdev.html">Website Developmet</a></li>
+              <li><a href="graphics.html">Logo & Poster Design</a></li>
+
+              <li><a href="socialmedia.html">Social Media/Ad Videos</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto " href="blog.html">Blogs</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#team">Feedback</a></li>-->
+          <li><a class="nav-link scrollto" href="contact.html">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>Empowering Brands in the Digital Sphere with <br><span>ARIUS</span></h1>
+            <h2>Unleashing Creativity, Driving Results, Elevating Brands</h2>
+            <div class="text-center text-lg-start">
+              <a href="#introduction" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/Transparent PNG/ariustransparent.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#EB5E28">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <section id="introduction">
+    <h1 style="padding-bottom: 5%;text-align: center;">Let's Introduce you to ARIUS!</h1>
+    <p class="intro-content">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Welcome to ARIUS, where creativity meets innovation! We are a passionate team of skilled professionals dedicated to providing top-notch services in the realm of digital media. With a focus on social media post generation, animated ad videography, ad videography, graphic design, and front-end responsive website development, we offer a comprehensive suite of solutions to help you elevate your brand's online presence. At ARIUS, we understand the power of captivating visuals and compelling storytelling in today's digital landscape. Our goal is to create impactful and engaging content that resonates with your target audience. Whether you need eye-catching social media posts, mesmerizing animated ads, professionally crafted videos, stunning graphic designs, or a visually appealing and user-friendly website, we have got you covered. With our team, each specializing in their respective domains, we bring a wealth of knowledge and experience to every project we undertake. We pride ourselves on staying ahead of the curve, constantly exploring new techniques, and leveraging the latest tools and technologies to deliver exceptional results.
+<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;What sets us apart is our unwavering commitment to quality and client satisfaction. We collaborate closely with our clients, taking the time to understand their unique goals, brand identity, and target audience. This enables us to tailor our services to their specific needs, ensuring that every project we deliver is a true reflection of their vision and objectives.
+<br>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;We invite you to explore our portfolio and see the transformative power of our services firsthand. Join us on this exciting journey, where we combine artistry, technology, and strategy to unlock your brand's full potential in the digital realm.
+Contact us today to discuss your project, and let's embark on a collaborative and inspiring partnership. Together, we will shape the future of your brand and make a lasting impact in the digital world.</p>
+
+<div class="contact-button text-center text-lg-start">
+  <a href="contact.html" class="btn">Contact Us</a>
+</div>
+  </section>
+
+  <section id="values">
+
+    <div class="values-content">
+      <h1 style="padding-bottom: 5%;text-align: center;">OUR VALUES & MISSION</h1>
+      <h4 style="text-align: center;">At ARIUS, we are guided by a strong set of values and principles that drive our work and define who we are. These core values serve as the compass for our actions and decisions, ensuring that we consistently deliver exceptional services to our clients.</h4>
+      <div class="container-fluid" style="padding-left: 10%;">
+        <div class="row zoom-holder" style="font-family: 'Open Sans', sans-serif; text-align: center;">
+          <div class="col-lg-3 col-md-3 col-sm-6 column">
+            <div class="ideas">
+              <img src="assets/img/features/checked.png" alt="" style="width: 4rem;">
+            </div>
+            <h6><strong>Hight Quality</strong></h6>
+            <p>Delivering impeccable social media posts, animated ad videos, graphic designs, and responsive websites with an unwavering commitment to exceptional craftsmanship.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 column">
+            <div class="fast">
+              <img src="assets/img/features/creative-process.png" alt="" style="width: 4rem;">
+            </div>
+            <h6><strong>Creative Team</strong></h6>
+            <p>A dynamic and imaginative team of <br>skilled professionals dedicated to translating your ideas into captivating visuals and engaging online <br>experiences.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 column">
+            <div class="ideas">
+              <img src="assets/img/features/business.png" alt="" style="width: 4rem;">
+            </div>
+            <h6><strong>Amazing Results</strong></h6>
+            <p>Witness your online presence transform with extraordinary outcomes, whether it's through viral social media campaigns, eye-catching ads or seamless website functionality.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 column">
+            <div class="ideas">
+              <img src="assets/img/features/discount.png" alt="" style="width: 4rem;">
+            </div>
+            <h6><strong>Best Pricing</strong></h6>
+            <p>Unlock unparalleled value with our competitive pricing model that guarantees the highest caliber of services without compromising your budget.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 column">
+            <div class="fast">
+              <img src="assets/img/features/project-management.png" alt="" style="width: 4rem;">
+            </div>
+            <h6><strong>Innovation</strong></h6>
+           <p> Embrace the forefront of digital creativity & stay ahead of the curve with innovative approach, cutting-edge techniques to elevate your online presence.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 column">
+            <div class="ideas">
+              <img src="assets/img/features/support.png" alt="" style="width: 4rem;">
+            </div>
+            <h6><strong>24/7 Support</strong></h6>
+            <p>Experience peace of mind with our prompt assistance and ensured expert guidance whenever you need it, ensuring your online success never rests.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="mission">
+      <h2>OUR MISSION - </h2>
+      <h5 style="line-height: 2;"><strong><i>" Our mission at ARIUS is to empower brands in the digital sphere. We aim to revolutionize our clients' online presence by combining artistic vision, technical expertise, and strategic thinking. We believe that every brand deserves to shine and make a lasting impact in the digital world."</i></strong></h5>
+    </div>
+
+    <br>
+    <h3>Aligned with our comprehensive services, our mission is to deliver -</h3>
+    <br>
+    <div class="portfolio">
+      <div class="point">
+        <img class="port-image" src="assets/img/Mission/experience.jpg" alt="Engaging and Memorable Experiences">
+        <div class="overlay">
+          <h2>Engaging and Memorable Experiences</h2>
+          <p>By telling your brand's story through our services, we help you forge meaningful connections and build a strong online presence.</p>
+        </div>
+      </div>
+
+      <div class="point">
+        <img class="port-image" src="assets/img/Mission/brand.jpg" alt="Enhanced Brand Visibility">
+        <div class="overlay">
+          <h2>Enhanced Brand Visibility</h2>
+          <p>We understand the significance of standing out in a crowded digital landscape. Through our services, we elevate your brand's visibility and help you reach a wider audience, increasing your chances of success.</p>
+        </div>
+      </div>
+
+      <div class="point">
+        <img class="port-image" src="assets/img/Mission/Communication.jpg" alt="Effective Communication">
+        <div class="overlay">
+          <h2>Effective Communication</h2>
+          <p>We ensure that your message resonates with your audience by crafting compelling visuals and engaging content that drives meaningful interactions.</p>
+        </div>
+      </div>
+
+      <div class="point">
+        <img class="port-image" src="assets/img/Mission/results.jpg" alt="Measurable Results">
+        <div class="overlay">
+          <h2>Measurable Results</h2>
+          <p>By employing data-driven strategies and leveraging analytics, we provide insights into the performance of our services, enabling you to make informed decisions and achieve your goals.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- ======= Testimonials Section ======= -->
+  <div class="testimonial-heading" style="color: white; background-color:#EB5E28; padding: 3% 1% 1% 1%;">
+    <hr style="padding: 2%;">
+    <h1 style="padding-left: 5%;">INTRODUCING OUR TEAM -</h1>
+  </div>
+<section id="testimonials" class="testimonials">
+
+<div class="container">
+
+ <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+   <div class="swiper-wrapper">
+
+     <div class="swiper-slide">
+       <div class="testimonial-item">
+         <img src="assets/img/testimonials/Aashish.jpg" class="testimonial-img" alt="">
+         <h3>Aashish Gangwar</h3>
+         <h4>Full Stack Web Developer</h4>
+         <p>
+           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+           Being a third-year B.Tech CSE student at NITK, Surathkal, I have experience with web design, full stack web development. I am also skilled in React.js, Web3, node.js managing and creative developments.
+           <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+          <a href="www.aashishgangwar.tech" class="button">Know Me More</a>
+       </div>
+     </div><!-- End testimonial item -->
+
+
+     <div class="swiper-slide">
+       <div class="testimonial-item">
+         <img src="assets/img/testimonials/Ujjwal.jpg" class="testimonial-img" alt="">
+         <h3>Ujjwal Anand</h3>
+         <h4>Graphic Designer</h4>
+         <p>
+           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+I am a third-year B.Tech CSE student at NITK, Surathkal. I have an expertise in graphic design, logo design, and social media management, and have worked in this industry for four years with firm grasp of Canva and Adobe.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+         </p>
+          <a href="#testimonials" class="button">Know Me More</a>
+       </div>
+     </div><!-- End testimonial item -->
+
+     <div class="swiper-slide">
+      <div class="testimonial-item">
+        <img src="assets/img/testimonials/Ridhisha.jpeg" class="testimonial-img" alt="">
+        <h3>Ridhisha Hede</h3>
+        <h4>Full Stack Web Developer</h4>
+        <p>
+          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          I am a third-year B.Tech CSE student at NITK, Surathkal. I am well-versed in web design and full stack web development using html,css,node.js and React.js, web3, data science, creative writing, marketing and management.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+        </p>
+        <a href="https://ridhishahede.github.io/mywebsite/" class="button">Know Me More</a>
+      </div>
+    </div><!-- End testimonial item -->
+
+     <div class="swiper-slide">
+       <div class="testimonial-item">
+         <img src="assets/img/testimonials/Sushant.jpg" class="testimonial-img" alt="">
+         <h3>Sushant Kumar</h3>
+         <h4>Ad Designer</h4>
+         <p>
+           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+I am a third-year B.Tech CSE student at NITK, Surathkal. I have extensive experience in videography, video and post editing, 3D animation creation, and social media handling. I also know to operate Naomi, tinkercard.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+         </p>
+          <a href="#testimonials" class="button">Know Me More</a>
+       </div>
+     </div><!-- End testimonial item -->
+</section><!-- End Testimonials Section -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top" style="background-color: #252422;">
+      <div class="container" >
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+        <a href="index.html">     <img src="assets/img/Transparent PNG/ariustransparent.png" alt="" class="img-fluid" height="250px" width="250px"></a> 
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="color: #EB5E28;">Contact us</h4>
+            <p>NH 66, Srinivasnagar<br>
+              Surathkal, Mangalore<br>
+              Karnataka 575025<br>
+              <strong>Phone:</strong>  +91 8279422731<br>
+              <strong>Email:</strong>  arius7103@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/arius_tech" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.instagram.com/arius_tech/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="www.linkedin.com/in/arius-350283285" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links" id="stop">
+            <h4 style="color: #EB5E28; float: left;">Useful Links</h4><br><br><br>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="blog.html">Blogs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#stop">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#stop">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4 style="color: #EB5E28; float: left;">Our Services</h4><br><br><br>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="webdev.html">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="graphics.html">Logo Designing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="socialmedia.html">Ad Videos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="socialmedia.html">Social Media Management</a></li>
+
+            </ul>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><a href="index.html"><span>ARIUS</span></a></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/S.js"></script>
+
+    <!-- Vendor JS Files -->
+ <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+ <script>
+   // Initialize Swiper
+   var swiper = new Swiper('.swiper-container', {
+     loop: true,
+     autoplay: {
+       delay: 5000, // Change delay to adjust the slide duration (in milliseconds)
+     },
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+     },
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+     },
+   });
+ </script>
+
+
+  </body>
+
+  </html>
